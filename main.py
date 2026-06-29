@@ -15,7 +15,7 @@ from pydub.utils import which
 import os
 
 # Automatically find FFmpeg installed on the server
-AudioSegment.converter = which("ffmpeg")
+AudioSegment.converter = "ffmpeg"
 
 
 app = FastAPI(
